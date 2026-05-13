@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "substrai-evalforge"
+version = "0.1.0"
+description = "Automated LLM evaluation pipeline generator"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Gaurav Kumar Sinha", email = "gaurav@substrai.dev"},
+]
+keywords = ["llm", "evaluation", "testing", "mlops", "genai", "rag", "metrics", "pipeline", "serverless", "aws-lambda"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+aws = ["boto3>=1.28.0"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[project.scripts]
+evalforge = "evalforge.cli.main:main"
+
+[project.urls]
+Homepage = "https://github.com/substrai/evalforge"
+Repository = "https://github.com/substrai/evalforge"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
