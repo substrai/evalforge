@@ -1,0 +1,19 @@
+{
+  "name": "substrai-evalforge",
+  "version": "0.1.0",
+  "description": "Automated LLM evaluation pipeline generator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/**/*"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["llm", "evaluation", "testing", "mlops", "genai", "rag", "metrics", "pipeline", "serverless"],
+  "author": "Gaurav Kumar Sinha <gaurav@substrai.dev>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/substrai/evalforge" },
+  "homepage": "https://github.com/substrai/evalforge",
+  "engines": { "node": ">=16.0.0" },
+  "devDependencies": { "typescript": "^5.0.0" }
+}
