@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "substrai-evalforge"
-version = "0.2.0"
+version = "0.3.0"
 description = "Automated LLM evaluation pipeline generator"
 readme = "README.md"
 license = {text = "MIT"}
