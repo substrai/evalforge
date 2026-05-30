@@ -13,7 +13,7 @@ Usage:
     print(results.summary())
 """
 
-__version__ = "0.8.0"
+__version__ = "0.9.0"
 
 from evalforge.core.config import EvalConfig, UseCaseType
 from evalforge.core.pipeline import EvalPipeline
