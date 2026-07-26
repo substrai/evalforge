@@ -1,6 +1,6 @@
 {
   "name": "substrai-evalforge",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Automated LLM evaluation pipeline generator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
